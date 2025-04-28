@@ -2,7 +2,7 @@ name: Docker Build and Push
 
 on:
   push:
-    branches: [ main ]
+    branches: [ Main ]
   # pull_request:
   #   branches: [ main ]
 
@@ -33,7 +33,7 @@ jobs:
           push: true
           tags: ${{ env.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:latest
           cache-from: type=registry,ref=${{ env.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:buildcache
-          cache-to: type=registry,ref=${{ env.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:buildcache,mode=max 
+          cache-to: type=registry,ref=${{ env.DOCKER_HUB_USERNAME }}/${{ env.DOCKER_HUB_REPOSITORY }}:buildcache,mode=max
 
 
       - name: Deploy to Koyeb
