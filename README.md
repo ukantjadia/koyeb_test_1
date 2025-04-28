@@ -5,7 +5,10 @@
 - Initialize Git repo
 - CI/CD Skeleton
 - Provision hosting
-- Project Structure
+- Project Structures
+
+
+
 
 ## Lead Ingestion
 - Create web form
